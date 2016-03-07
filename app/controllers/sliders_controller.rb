@@ -1,11 +1,11 @@
-class SlidersController < ApplicationController
+  class SlidersController < ApplicationController
   before_action :set_slider, only: [:show]
 
   # GET /sliders
   # GET /sliders.json
   def index
     @sliders = Slider.all
-    @slides = Slider.where("DateTime(published_from) < ? AND DateTime(published_to) > ? AND published == ?", DateTime.now, DateTime.now, true)
+    @sliders = Slider.where("DateTime(published_from) < ? AND DateTime(published_to) > ? AND published == ?", DateTime.now, DateTime.now, true)
   end
 end
 #   # GET /sliders/1
@@ -27,19 +27,19 @@ end
 #   def create
 #     @slider = Slider.new(slider_params)
 #
-#     respond_to do |format|
-#       if @slider.save
-#         format.html { redirect_to @slider, notice: 'Slider was successfully created.' }
-#         format.json { render :show, status: :created, location: @slider }
-#       else
-#         format.html { render :new }
-#         format.json { render json: @slider.errors, status: :unprocessable_entity }
-#       end
-#     end
-#   end
-#
-#   # PATCH/PUT /sliders/1
-#   # PATCH/PUT /sliders/1.json
+  #     respond_to do |format|
+  #       if @slider.save
+  #         format.html { redirect_to @slider, notice: 'Slider was successfully created.' }
+  #         format.json { render :show, status: :created, location: @slider }
+  #       else
+  #         format.html { render :new }
+  #         format.json { render json: @slider.errors, status: :unprocessable_entity }
+  #       end
+  #     end
+  #   end
+  #
+  #   # PATCH/PUT /sliders/1
+  #   # PATCH/PUT /sliders/1.json
 #   def update
 #     respond_to do |format|
 #       if @slider.update(slider_params)
