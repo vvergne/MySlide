@@ -7,6 +7,10 @@ class Admin::SlidersController < ApplicationController
     @sliders = Slider.all
   end
 
+
+  def user_params
+    params.require(:user).permit()
+  end
   # GET /sliders/1
   # GET /sliders/1.json
   def show
@@ -69,6 +73,6 @@ class Admin::SlidersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def slider_params
-      params.require(:slider).permit(:name, :descriptiong, :descriptiond, :picture, :published, :published_from, :published_to)
+      params.require(:slider).permit(:name, :descriptiong, :descriptiond, :picture, :published, :published_from, :published_to, :email, :password, :password_confirmation)
     end
 end

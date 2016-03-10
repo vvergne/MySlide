@@ -12,6 +12,14 @@
   <% end %>
 
   <div class="field">
+  <%= f.label :password %></br>
+  <%= f.password_field :password %>
+  </div>
+  <div class="field">
+  <%= f.password_confirmation :password_confirmation %></br>
+  <%= f.password_confirmation_field :password_confirmation_field %>
+  </div>
+  <div class="field">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
@@ -24,13 +32,14 @@
     <%= f.check_box :published %>
   </div>
   <div class="field">
-    <%= f.label :published_to%><br>
-    <%= f.date_select :published_to %>
-  </div>
-  <div class="field">
     <%= f.label :published_from %><br>
     <%= f.date_select :published_from %>
   </div>
+  <div class="field">
+    <%= f.label :published_to%><br>
+    <%= f.date_select :published_to %>
+  </div>
+
   <div class="field">
     <%= f.label :descriptiond %><br>
     <%= f.text_area :descriptiond %>

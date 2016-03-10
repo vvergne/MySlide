@@ -14143,3 +14143,2647 @@ Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 16:56:29 +0100
+
+
+Started GET "/admin/sliders/7/edit" for ::1 at 2016-03-07 17:46:36 +0100
+Processing by Admin::SlidersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mSlider Load (0.2ms)[0m  SELECT  "sliders".* FROM "sliders" WHERE "sliders"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered admin/sliders/_form.html.erb (6.7ms)
+  Rendered admin/sliders/edit.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 38ms (Views: 25.9ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/admin/sliders/7" for ::1 at 2016-03-07 17:46:38 +0100
+Processing by Admin::SlidersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nGl5VLzh14D+TljL+7R4nwsYZRzF1y3y0b/RrMCsZ51Yw1XDfSrONJwKUVL5HWV2B7GBQkTcMDOeQ/G5Gn72qw==", "slider"=>{"name"=>"une bonne photo", "descriptiong"=>"une description à gauche", "published"=>"1", "published_to(1i)"=>"2016", "published_to(2i)"=>"3", "published_to(3i)"=>"7", "published_from(1i)"=>"2016", "published_from(2i)"=>"3", "published_from(3i)"=>"8", "descriptiond"=>"description droite"}, "commit"=>"Update Slider", "id"=>"7"}
+  [1m[36mSlider Load (0.1ms)[0m  [1mSELECT  "sliders".* FROM "sliders" WHERE "sliders"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "sliders" SET "published" = ?, "updated_at" = ? WHERE "sliders"."id" = ?[0m  [["published", "t"], ["updated_at", "2016-03-07 16:46:38.328243"], ["id", 7]]
+  [1m[35m (123.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/admin/sliders/7
+Completed 302 Found in 129ms (ActiveRecord: 123.4ms)
+
+
+Started GET "/admin/sliders/7" for ::1 at 2016-03-07 17:46:38 +0100
+Processing by Admin::SlidersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSlider Load (0.1ms)[0m  [1mSELECT  "sliders".* FROM "sliders" WHERE "sliders"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered admin/sliders/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/sliders" for ::1 at 2016-03-07 17:46:41 +0100
+Processing by Admin::SlidersController#index as HTML
+  [1m[35mSlider Load (0.2ms)[0m  SELECT "sliders".* FROM "sliders"
+  Rendered admin/sliders/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 17:46:43 +0100
+Processing by SlidersController#index as HTML
+  [1m[36mSlider Load (0.2ms)[0m  [1mSELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 16:46:43.860867' AND DateTime(published_to) > '2016-03-07 16:46:43.860883' AND published == 't')[0m
+  Rendered sliders/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 17:46:43 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 17:46:43 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 17:46:43 +0100
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 17:46:43 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 17:46:43 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 17:46:43 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 17:46:43 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 17:46:43 +0100
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 17:46:44 +0100
+Processing by SlidersController#index as HTML
+  [1m[35mSlider Load (0.2ms)[0m  SELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 16:46:44.845571' AND DateTime(published_to) > '2016-03-07 16:46:44.845585' AND published == 't')
+  Rendered sliders/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 17:46:44 +0100
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 17:46:44 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 17:46:44 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 17:46:44 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 17:46:44 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 17:46:44 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 17:46:44 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 17:46:44 +0100
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 17:46:45 +0100
+Processing by SlidersController#index as HTML
+  [1m[36mSlider Load (0.2ms)[0m  [1mSELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 16:46:45.395329' AND DateTime(published_to) > '2016-03-07 16:46:45.395342' AND published == 't')[0m
+  Rendered sliders/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 17:46:45 +0100
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 17:46:45 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 17:46:45 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 17:46:45 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 17:46:45 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 17:46:45 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 17:46:45 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 17:46:45 +0100
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 17:46:45 +0100
+Processing by SlidersController#index as HTML
+  [1m[35mSlider Load (0.2ms)[0m  SELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 16:46:45.960152' AND DateTime(published_to) > '2016-03-07 16:46:45.960164' AND published == 't')
+  Rendered sliders/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 17:46:46 +0100
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 17:46:46 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 17:46:46 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 17:46:46 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 17:46:46 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 17:46:46 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 17:46:46 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 17:46:46 +0100
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 17:46:47 +0100
+Processing by SlidersController#index as HTML
+  [1m[36mSlider Load (0.2ms)[0m  [1mSELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 16:46:47.129082' AND DateTime(published_to) > '2016-03-07 16:46:47.129095' AND published == 't')[0m
+  Rendered sliders/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 17:46:47 +0100
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 17:46:47 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 17:46:47 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 17:46:47 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 17:46:47 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 17:46:47 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 17:46:47 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 17:46:47 +0100
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 17:46:48 +0100
+Processing by SlidersController#index as HTML
+  [1m[35mSlider Load (0.2ms)[0m  SELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 16:46:48.597104' AND DateTime(published_to) > '2016-03-07 16:46:48.597117' AND published == 't')
+  Rendered sliders/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 17:46:48 +0100
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 17:46:48 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 17:46:48 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 17:46:48 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 17:46:48 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 17:46:48 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 17:46:48 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 17:46:48 +0100
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 17:46:49 +0100
+Processing by SlidersController#index as HTML
+  [1m[36mSlider Load (0.3ms)[0m  [1mSELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 16:46:49.696513' AND DateTime(published_to) > '2016-03-07 16:46:49.696534' AND published == 't')[0m
+  Rendered sliders/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 31ms (Views: 29.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 17:46:49 +0100
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 17:46:49 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 17:46:49 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 17:46:49 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 17:46:49 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 17:46:49 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 17:46:49 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 17:46:49 +0100
+
+
+Started GET "/admin/sliders/7/edit" for ::1 at 2016-03-07 17:46:52 +0100
+Processing by Admin::SlidersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mSlider Load (0.1ms)[0m  SELECT  "sliders".* FROM "sliders" WHERE "sliders"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered admin/sliders/_form.html.erb (5.4ms)
+  Rendered admin/sliders/edit.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/admin/sliders/7" for ::1 at 2016-03-07 17:47:01 +0100
+Processing by Admin::SlidersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q9fGv9nM1tnNM9/6efBxnCMGOsO1ooosp4LTiEMXoDCHfeooGAfPba931mN7WWx1L6/enTSpl+3ofvOdmcUxBg==", "slider"=>{"name"=>"une bonne photo", "descriptiong"=>"une description à gauche", "published"=>"1", "published_to(1i)"=>"2016", "published_to(2i)"=>"3", "published_to(3i)"=>"6", "published_from(1i)"=>"2016", "published_from(2i)"=>"3", "published_from(3i)"=>"8", "descriptiond"=>"description droite"}, "commit"=>"Update Slider", "id"=>"7"}
+  [1m[36mSlider Load (0.1ms)[0m  [1mSELECT  "sliders".* FROM "sliders" WHERE "sliders"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "sliders" SET "published_to" = ?, "updated_at" = ? WHERE "sliders"."id" = ?[0m  [["published_to", "2016-03-06 00:00:00.000000"], ["updated_at", "2016-03-07 16:47:01.413884"], ["id", 7]]
+  [1m[35m (71.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/admin/sliders/7
+Completed 302 Found in 77ms (ActiveRecord: 71.9ms)
+
+
+Started GET "/admin/sliders/7" for ::1 at 2016-03-07 17:47:01 +0100
+Processing by Admin::SlidersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSlider Load (0.1ms)[0m  [1mSELECT  "sliders".* FROM "sliders" WHERE "sliders"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered admin/sliders/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/sliders" for ::1 at 2016-03-07 17:47:03 +0100
+Processing by Admin::SlidersController#index as HTML
+  [1m[35mSlider Load (0.5ms)[0m  SELECT "sliders".* FROM "sliders"
+  Rendered admin/sliders/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 17:47:05 +0100
+Processing by SlidersController#index as HTML
+  [1m[36mSlider Load (0.2ms)[0m  [1mSELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 16:47:05.502437' AND DateTime(published_to) > '2016-03-07 16:47:05.502447' AND published == 't')[0m
+  Rendered sliders/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 17:47:05 +0100
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 17:47:05 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 17:47:05 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 17:47:05 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 17:47:05 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 17:47:05 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 17:47:05 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 17:47:05 +0100
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 17:47:06 +0100
+Processing by SlidersController#index as HTML
+  [1m[35mSlider Load (0.2ms)[0m  SELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 16:47:06.229003' AND DateTime(published_to) > '2016-03-07 16:47:06.229017' AND published == 't')
+  Rendered sliders/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 17:47:06 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 17:47:06 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 17:47:06 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 17:47:06 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 17:47:06 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 17:47:06 +0100
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 17:47:06 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 17:47:06 +0100
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 17:47:06 +0100
+Processing by SlidersController#index as HTML
+  [1m[36mSlider Load (0.3ms)[0m  [1mSELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 16:47:06.729302' AND DateTime(published_to) > '2016-03-07 16:47:06.729329' AND published == 't')[0m
+  Rendered sliders/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 37ms (Views: 30.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 17:47:06 +0100
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 17:47:06 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 17:47:06 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 17:47:06 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 17:47:06 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 17:47:06 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 17:47:06 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 17:47:06 +0100
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 17:47:07 +0100
+Processing by SlidersController#index as HTML
+  [1m[35mSlider Load (0.4ms)[0m  SELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 16:47:07.284670' AND DateTime(published_to) > '2016-03-07 16:47:07.284692' AND published == 't')
+  Rendered sliders/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 17:47:07 +0100
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 17:47:07 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 17:47:07 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 17:47:07 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 17:47:07 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 17:47:07 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 17:47:07 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 17:47:07 +0100
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 17:47:07 +0100
+Processing by SlidersController#index as HTML
+  [1m[36mSlider Load (0.2ms)[0m  [1mSELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 16:47:07.705033' AND DateTime(published_to) > '2016-03-07 16:47:07.705045' AND published == 't')[0m
+  Rendered sliders/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 17:47:07 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 17:47:07 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 17:47:07 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 17:47:07 +0100
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 17:47:07 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 17:47:07 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 17:47:07 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 17:47:07 +0100
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 17:47:08 +0100
+Processing by SlidersController#index as HTML
+  [1m[35mSlider Load (0.2ms)[0m  SELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 16:47:08.026439' AND DateTime(published_to) > '2016-03-07 16:47:08.026454' AND published == 't')
+  Rendered sliders/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 17:47:08 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 17:47:08 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 17:47:08 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 17:47:08 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 17:47:08 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 17:47:08 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 17:47:08 +0100
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 17:47:08 +0100
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 17:47:08 +0100
+Processing by SlidersController#index as HTML
+  [1m[36mSlider Load (0.2ms)[0m  [1mSELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 16:47:08.528345' AND DateTime(published_to) > '2016-03-07 16:47:08.528355' AND published == 't')[0m
+  Rendered sliders/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 17:47:08 +0100
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 17:47:08 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 17:47:08 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 17:47:08 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 17:47:08 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 17:47:08 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 17:47:08 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 17:47:08 +0100
+
+
+Started GET "/slider" for ::1 at 2016-03-07 17:47:11 +0100
+
+ActionController::RoutingError (No route matches [GET] "/slider"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.9ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.8ms)
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 17:47:14 +0100
+Processing by SlidersController#index as HTML
+  [1m[35mSlider Load (0.2ms)[0m  SELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 16:47:14.038092' AND DateTime(published_to) > '2016-03-07 16:47:14.038107' AND published == 't')
+  Rendered sliders/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 28ms (Views: 27.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/sliders/7/edit" for ::1 at 2016-03-07 17:47:41 +0100
+Processing by Admin::SlidersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSlider Load (0.2ms)[0m  [1mSELECT  "sliders".* FROM "sliders" WHERE "sliders"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered admin/sliders/_form.html.erb (6.2ms)
+  Rendered admin/sliders/edit.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/admin/sliders/7" for ::1 at 2016-03-07 17:47:51 +0100
+Processing by Admin::SlidersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/SWvzPyHV0yQkVEQYHormTXdkvdKF16fZOK+x2lKKSs5j4NbPUxO+PLVWIli0zZwOXR2qcscQ14rHp7Ss5i4HQ==", "slider"=>{"name"=>"une bonne photo", "descriptiong"=>"une description à gauche", "published"=>"1", "published_to(1i)"=>"2016", "published_to(2i)"=>"3", "published_to(3i)"=>"5", "published_from(1i)"=>"2016", "published_from(2i)"=>"3", "published_from(3i)"=>"7", "descriptiond"=>"description droite"}, "commit"=>"Update Slider", "id"=>"7"}
+  [1m[35mSlider Load (0.1ms)[0m  SELECT  "sliders".* FROM "sliders" WHERE "sliders"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "sliders" SET "published_from" = ?, "published_to" = ?, "updated_at" = ? WHERE "sliders"."id" = ?  [["published_from", "2016-03-07 00:00:00.000000"], ["published_to", "2016-03-05 00:00:00.000000"], ["updated_at", "2016-03-07 16:47:51.047858"], ["id", 7]]
+  [1m[36m (71.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/admin/sliders/7
+Completed 302 Found in 85ms (ActiveRecord: 72.1ms)
+
+
+Started GET "/admin/sliders/7" for ::1 at 2016-03-07 17:47:51 +0100
+Processing by Admin::SlidersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mSlider Load (0.1ms)[0m  SELECT  "sliders".* FROM "sliders" WHERE "sliders"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered admin/sliders/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/sliders" for ::1 at 2016-03-07 17:47:54 +0100
+Processing by Admin::SlidersController#index as HTML
+  [1m[36mSlider Load (0.2ms)[0m  [1mSELECT "sliders".* FROM "sliders"[0m
+  Rendered admin/sliders/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 17:47:57 +0100
+Processing by SlidersController#index as HTML
+  [1m[35mSlider Load (0.4ms)[0m  SELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 16:47:57.387623' AND DateTime(published_to) > '2016-03-07 16:47:57.387646' AND published == 't')
+  Rendered sliders/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 17:47:57 +0100
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 17:47:57 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 17:47:57 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 17:47:57 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 17:47:57 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 17:47:57 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 17:47:57 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 17:47:57 +0100
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 17:47:58 +0100
+Processing by SlidersController#index as HTML
+  [1m[36mSlider Load (0.2ms)[0m  [1mSELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 16:47:58.270503' AND DateTime(published_to) > '2016-03-07 16:47:58.270514' AND published == 't')[0m
+  Rendered sliders/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 17:47:58 +0100
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 17:47:58 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 17:47:58 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 17:47:58 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 17:47:58 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 17:47:58 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 17:47:58 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 17:47:58 +0100
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 17:48:01 +0100
+Processing by SlidersController#index as HTML
+  [1m[35mSlider Load (0.3ms)[0m  SELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 16:48:01.025727' AND DateTime(published_to) > '2016-03-07 16:48:01.025742' AND published == 't')
+  Rendered sliders/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 20ms (Views: 17.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 17:48:01 +0100
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 17:48:01 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 17:48:01 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 17:48:01 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 17:48:01 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 17:48:01 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 17:48:01 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 17:48:01 +0100
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 17:48:19 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SlidersController#index as HTML
+  [1m[35mSlider Load (0.2ms)[0m  SELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 16:48:19.935587' AND DateTime(published_to) > '2016-03-07 16:48:19.935609' AND published == 't')
+  Rendered sliders/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 271ms (Views: 253.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 17:48:20 +0100
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 17:48:20 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 17:48:20 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 17:48:20 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 17:48:20 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 17:48:20 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 17:48:20 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 17:48:20 +0100
+
+
+Started GET "/admin/sliders/7/edit" for ::1 at 2016-03-07 17:48:34 +0100
+Processing by Admin::SlidersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSlider Load (0.3ms)[0m  [1mSELECT  "sliders".* FROM "sliders" WHERE "sliders"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered admin/sliders/_form.html.erb (63.5ms)
+  Rendered admin/sliders/edit.html.erb within layouts/application (70.7ms)
+Completed 200 OK in 125ms (Views: 100.4ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/admin/sliders/7" for ::1 at 2016-03-07 17:48:37 +0100
+Processing by Admin::SlidersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RtfbtVHv5aQkcPbjjdeI2AEZP5NuOxKqYBzjWb1BlMaCffcikCT8EEY0/3qPfpUxDbDbze8wD2sv4MNMZ5MF8A==", "slider"=>{"name"=>"une bonne photo", "descriptiong"=>"une description à gauche", "published"=>"1", "published_to(1i)"=>"2016", "published_to(2i)"=>"3", "published_to(3i)"=>"5", "published_from(1i)"=>"2016", "published_from(2i)"=>"3", "published_from(3i)"=>"7", "descriptiond"=>"description droite"}, "commit"=>"Update Slider", "id"=>"7"}
+  [1m[35mSlider Load (0.1ms)[0m  SELECT  "sliders".* FROM "sliders" WHERE "sliders"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/admin/sliders/7
+Completed 302 Found in 10ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/sliders/7" for ::1 at 2016-03-07 17:48:37 +0100
+Processing by Admin::SlidersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSlider Load (0.1ms)[0m  [1mSELECT  "sliders".* FROM "sliders" WHERE "sliders"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered admin/sliders/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/sliders" for ::1 at 2016-03-07 17:48:39 +0100
+Processing by Admin::SlidersController#index as HTML
+  [1m[35mSlider Load (0.3ms)[0m  SELECT "sliders".* FROM "sliders"
+  Rendered admin/sliders/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 17:48:42 +0100
+Processing by SlidersController#index as HTML
+  [1m[36mSlider Load (0.2ms)[0m  [1mSELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 16:48:42.397999' AND DateTime(published_to) > '2016-03-07 16:48:42.398013' AND published == 't')[0m
+  Rendered sliders/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 17:48:42 +0100
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 17:48:42 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 17:48:42 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 17:48:42 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 17:48:42 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 17:48:42 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 17:48:42 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 17:48:42 +0100
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 17:48:42 +0100
+Processing by SlidersController#index as HTML
+  [1m[35mSlider Load (0.2ms)[0m  SELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 16:48:42.569027' AND DateTime(published_to) > '2016-03-07 16:48:42.569042' AND published == 't')
+  Rendered sliders/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 17:48:42 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 17:48:42 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 17:48:42 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 17:48:42 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 17:48:42 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 17:48:42 +0100
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 17:48:42 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 17:48:42 +0100
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 17:48:43 +0100
+Processing by SlidersController#index as HTML
+  [1m[36mSlider Load (0.2ms)[0m  [1mSELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 16:48:43.132984' AND DateTime(published_to) > '2016-03-07 16:48:43.132995' AND published == 't')[0m
+  Rendered sliders/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 17:48:43 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 17:48:43 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 17:48:43 +0100
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 17:48:43 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 17:48:43 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 17:48:43 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 17:48:43 +0100
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 17:48:43 +0100
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 17:48:59 +0100
+Processing by SlidersController#index as HTML
+  [1m[35mSlider Load (0.4ms)[0m  SELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 16:48:59.590548' AND DateTime(published_to) > '2016-03-07 16:48:59.590563' AND published == 't')
+  Rendered sliders/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/sliders/7/edit" for ::1 at 2016-03-07 17:53:31 +0100
+Processing by Admin::SlidersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSlider Load (0.1ms)[0m  [1mSELECT  "sliders".* FROM "sliders" WHERE "sliders"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered admin/sliders/_form.html.erb (5.3ms)
+  Rendered admin/sliders/edit.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/sliders/7" for ::1 at 2016-03-07 18:04:06 +0100
+Processing by Admin::SlidersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mSlider Load (0.2ms)[0m  SELECT  "sliders".* FROM "sliders" WHERE "sliders"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered admin/sliders/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 29ms (Views: 17.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/sliders" for ::1 at 2016-03-07 18:04:09 +0100
+Processing by Admin::SlidersController#index as HTML
+  [1m[36mSlider Load (0.2ms)[0m  [1mSELECT "sliders".* FROM "sliders"[0m
+  Rendered admin/sliders/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 18:04:12 +0100
+Processing by SlidersController#index as HTML
+  [1m[35mSlider Load (0.2ms)[0m  SELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 17:04:12.908123' AND DateTime(published_to) > '2016-03-07 17:04:12.908138' AND published == 't')
+  Rendered sliders/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 18:04:12 +0100
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 18:04:12 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 18:04:12 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 18:04:12 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 18:04:12 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 18:04:12 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 18:04:12 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 18:04:13 +0100
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 18:04:13 +0100
+Processing by SlidersController#index as HTML
+  [1m[36mSlider Load (0.3ms)[0m  [1mSELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 17:04:13.484424' AND DateTime(published_to) > '2016-03-07 17:04:13.484444' AND published == 't')[0m
+  Rendered sliders/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 18:04:13 +0100
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 18:04:13 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 18:04:13 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 18:04:13 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 18:04:13 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 18:04:13 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 18:04:13 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 18:04:13 +0100
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 18:04:13 +0100
+Processing by SlidersController#index as HTML
+  [1m[35mSlider Load (0.2ms)[0m  SELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 17:04:13.760857' AND DateTime(published_to) > '2016-03-07 17:04:13.760870' AND published == 't')
+  Rendered sliders/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 18:04:13 +0100
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 18:04:13 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 18:04:13 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 18:04:13 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 18:04:13 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 18:04:13 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 18:04:13 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 18:04:13 +0100
+
+
+Started GET "/admin/sliders/7/edit" for ::1 at 2016-03-07 18:04:16 +0100
+Processing by Admin::SlidersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSlider Load (0.1ms)[0m  [1mSELECT  "sliders".* FROM "sliders" WHERE "sliders"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered admin/sliders/_form.html.erb (6.3ms)
+  Rendered admin/sliders/edit.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/admin/sliders/7" for ::1 at 2016-03-07 18:04:24 +0100
+Processing by Admin::SlidersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E7j+OSxS1v8Df1ZlNou5twLbOlTdmXwpyUH+us5+1lPXEtKu7ZnPS2E7X/w0IqReDnLeClySYeiGvd6vFKxHZQ==", "slider"=>{"name"=>"une bonne photo", "descriptiong"=>"une description à gauche", "published"=>"1", "published_to(1i)"=>"2016", "published_to(2i)"=>"3", "published_to(3i)"=>"5", "published_from(1i)"=>"2016", "published_from(2i)"=>"3", "published_from(3i)"=>"8", "descriptiond"=>"description droite"}, "commit"=>"Update Slider", "id"=>"7"}
+  [1m[35mSlider Load (0.1ms)[0m  SELECT  "sliders".* FROM "sliders" WHERE "sliders"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "sliders" SET "published_from" = ?, "updated_at" = ? WHERE "sliders"."id" = ?  [["published_from", "2016-03-08 00:00:00.000000"], ["updated_at", "2016-03-07 17:04:24.816430"], ["id", 7]]
+  [1m[36m (98.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/admin/sliders/7
+Completed 302 Found in 104ms (ActiveRecord: 98.6ms)
+
+
+Started GET "/admin/sliders/7" for ::1 at 2016-03-07 18:04:24 +0100
+Processing by Admin::SlidersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mSlider Load (0.1ms)[0m  SELECT  "sliders".* FROM "sliders" WHERE "sliders"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered admin/sliders/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/sliders" for ::1 at 2016-03-07 18:04:27 +0100
+Processing by Admin::SlidersController#index as HTML
+  [1m[36mSlider Load (0.2ms)[0m  [1mSELECT "sliders".* FROM "sliders"[0m
+  Rendered admin/sliders/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/sliders/7/edit" for ::1 at 2016-03-07 18:04:31 +0100
+Processing by Admin::SlidersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mSlider Load (0.1ms)[0m  SELECT  "sliders".* FROM "sliders" WHERE "sliders"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered admin/sliders/_form.html.erb (5.8ms)
+  Rendered admin/sliders/edit.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 18:04:33 +0100
+Processing by SlidersController#index as HTML
+  [1m[36mSlider Load (0.2ms)[0m  [1mSELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 17:04:33.480127' AND DateTime(published_to) > '2016-03-07 17:04:33.480140' AND published == 't')[0m
+  Rendered sliders/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for ::1 at 2016-03-07 18:04:40 +0100
+Processing by Admin::SlidersController#index as HTML
+  [1m[35mSlider Load (0.2ms)[0m  SELECT "sliders".* FROM "sliders"
+  Rendered admin/sliders/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/sliders/7/edit" for ::1 at 2016-03-07 18:05:00 +0100
+Processing by Admin::SlidersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSlider Load (0.1ms)[0m  [1mSELECT  "sliders".* FROM "sliders" WHERE "sliders"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered admin/sliders/_form.html.erb (6.4ms)
+  Rendered admin/sliders/edit.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/admin/sliders/7" for ::1 at 2016-03-07 18:05:08 +0100
+Processing by Admin::SlidersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sBA1HEG64eaPUDFK3+n6oGTrlyZ8C0htnfyeQ8V7dWd0uhmLgHH4Uu0UONPdQOdJaEJzeP0AVazSAL5WH6nkUQ==", "slider"=>{"name"=>"une bonne photo", "descriptiong"=>"une description à gauche", "published"=>"1", "published_to(1i)"=>"2016", "published_to(2i)"=>"3", "published_to(3i)"=>"8", "published_from(1i)"=>"2016", "published_from(2i)"=>"3", "published_from(3i)"=>"6", "descriptiond"=>"description droite"}, "commit"=>"Update Slider", "id"=>"7"}
+  [1m[35mSlider Load (0.1ms)[0m  SELECT  "sliders".* FROM "sliders" WHERE "sliders"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "sliders" SET "published_from" = ?, "published_to" = ?, "updated_at" = ? WHERE "sliders"."id" = ?  [["published_from", "2016-03-06 00:00:00.000000"], ["published_to", "2016-03-08 00:00:00.000000"], ["updated_at", "2016-03-07 17:05:08.946447"], ["id", 7]]
+  [1m[36m (70.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/admin/sliders/7
+Completed 302 Found in 76ms (ActiveRecord: 71.3ms)
+
+
+Started GET "/admin/sliders/7" for ::1 at 2016-03-07 18:05:09 +0100
+Processing by Admin::SlidersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mSlider Load (0.1ms)[0m  SELECT  "sliders".* FROM "sliders" WHERE "sliders"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered admin/sliders/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/sliders" for ::1 at 2016-03-07 18:05:11 +0100
+Processing by Admin::SlidersController#index as HTML
+  [1m[36mSlider Load (0.2ms)[0m  [1mSELECT "sliders".* FROM "sliders"[0m
+  Rendered admin/sliders/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 18:05:13 +0100
+Processing by SlidersController#index as HTML
+  [1m[35mSlider Load (0.2ms)[0m  SELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 17:05:13.237856' AND DateTime(published_to) > '2016-03-07 17:05:13.237869' AND published == 't')
+  Rendered sliders/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 18:05:13 +0100
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 18:05:13 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 18:05:13 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 18:05:13 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 18:05:13 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 18:05:13 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 18:05:13 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 18:05:13 +0100
+
+
+Started GET "/admin/sliders" for ::1 at 2016-03-07 18:05:49 +0100
+Processing by Admin::SlidersController#index as HTML
+  [1m[36mSlider Load (0.2ms)[0m  [1mSELECT "sliders".* FROM "sliders"[0m
+  Rendered admin/sliders/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 18:05:49 +0100
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 18:05:49 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 18:05:49 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 18:05:49 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 18:05:49 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 18:05:49 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 18:05:49 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 18:05:49 +0100
+
+
+Started GET "/admin/sliders/7/edit" for ::1 at 2016-03-07 18:05:51 +0100
+Processing by Admin::SlidersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mSlider Load (0.1ms)[0m  SELECT  "sliders".* FROM "sliders" WHERE "sliders"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered admin/sliders/_form.html.erb (10.7ms)
+  Rendered admin/sliders/edit.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 18:05:56 +0100
+Processing by SlidersController#index as HTML
+  [1m[36mSlider Load (0.4ms)[0m  [1mSELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 17:05:56.792645' AND DateTime(published_to) > '2016-03-07 17:05:56.792665' AND published == 't')[0m
+  Rendered sliders/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 30ms (Views: 28.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 19:18:52 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5.1) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.8ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (59.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (79.7ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to SorceryCore (20160307181237)
+  [1m[35m (0.1ms)[0m  begin transaction
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /home/vergne/Documents/rubyRor/MySlide/db/migrate/20160307181237_sorcery_core.rb:8)
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar NOT NULL, "crypted_password" varchar, "salt" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160307181237"]]
+  [1m[36m (170.0ms)[0m  [1mcommit transaction[0m
+Migrating to SorceryRememberMe (20160307181323)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "users" ADD "remember_me_token" varchar[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ADD "remember_me_token_expires_at" datetime
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  CREATE  INDEX "index_users_on_remember_me_token" ON "users" ("remember_me_token")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160307181323"]]
+  [1m[35m (115.9ms)[0m  commit transaction
+Migrating to SorceryResetPassword (20160307181324)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD "reset_password_token" varchar
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "reset_password_token_expires_at" datetime[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "reset_password_email_sent_at" datetime
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_remember_me_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_remember_me_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160307181324"]]
+  [1m[36m (119.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_remember_me_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_remember_me_token' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 19:19:07 +0100
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by SlidersController#index as HTML
+  [1m[36mSlider Load (0.2ms)[0m  [1mSELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 18:19:07.388833' AND DateTime(published_to) > '2016-03-07 18:19:07.388853' AND published == 't')[0m
+  Rendered sliders/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 335ms (Views: 318.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 19:19:07 +0100
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 19:19:07 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 19:19:07 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 19:19:07 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 19:19:07 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 19:19:07 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 19:19:07 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 19:19:07 +0100
+
+
+Started GET "/admin" for ::1 at 2016-03-07 19:19:16 +0100
+Processing by Admin::SlidersController#index as HTML
+  [1m[35mSlider Load (0.3ms)[0m  SELECT "sliders".* FROM "sliders"
+  Rendered admin/sliders/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 34ms (Views: 32.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/sliders/7/edit" for ::1 at 2016-03-07 19:19:20 +0100
+Processing by Admin::SlidersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSlider Load (0.2ms)[0m  [1mSELECT  "sliders".* FROM "sliders" WHERE "sliders"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered admin/sliders/_form.html.erb (66.0ms)
+  Rendered admin/sliders/edit.html.erb within layouts/application (67.8ms)
+Completed 200 OK in 135ms (Views: 79.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 19:19:26 +0100
+Processing by SlidersController#index as HTML
+  [1m[35mSlider Load (0.2ms)[0m  SELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 18:19:26.312912' AND DateTime(published_to) > '2016-03-07 18:19:26.312927' AND published == 't')
+  Rendered sliders/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 19:22:48 +0100
+Processing by SlidersController#index as HTML
+  [1m[36mSlider Load (0.5ms)[0m  [1mSELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 18:22:48.363017' AND DateTime(published_to) > '2016-03-07 18:22:48.363035' AND published == 't')[0m
+  Rendered sliders/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 33ms (Views: 27.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 19:22:48 +0100
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 19:22:48 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 19:22:48 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 19:22:48 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 19:22:48 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 19:22:48 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 19:22:48 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 19:22:48 +0100
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 19:22:49 +0100
+Processing by SlidersController#index as HTML
+  [1m[35mSlider Load (0.2ms)[0m  SELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 18:22:49.310050' AND DateTime(published_to) > '2016-03-07 18:22:49.310066' AND published == 't')
+  Rendered sliders/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 19:22:49 +0100
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 19:22:49 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 19:22:49 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 19:22:49 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 19:22:49 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 19:22:49 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 19:22:49 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 19:22:49 +0100
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 19:22:49 +0100
+Processing by SlidersController#index as HTML
+  [1m[36mSlider Load (0.3ms)[0m  [1mSELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 18:22:49.656300' AND DateTime(published_to) > '2016-03-07 18:22:49.656323' AND published == 't')[0m
+  Rendered sliders/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 19:22:49 +0100
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 19:22:49 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 19:22:49 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 19:22:49 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 19:22:49 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 19:22:49 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 19:22:49 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 19:22:49 +0100
+
+
+Started GET "/admin" for ::1 at 2016-03-07 19:23:01 +0100
+Processing by Admin::SlidersController#index as HTML
+  [1m[35mSlider Load (0.2ms)[0m  SELECT "sliders".* FROM "sliders"
+  Rendered admin/sliders/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 38ms (Views: 34.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for ::1 at 2016-03-07 19:26:37 +0100
+Processing by Admin::SlidersController#index as HTML
+  [1m[36mSlider Load (0.2ms)[0m  [1mSELECT "sliders".* FROM "sliders"[0m
+  Rendered admin/sliders/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 19:26:37 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 19:26:37 +0100
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 19:26:37 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 19:26:37 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 19:26:37 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 19:26:37 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 19:26:37 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 19:26:37 +0100
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 19:26:41 +0100
+Processing by SlidersController#index as HTML
+  [1m[35mSlider Load (0.3ms)[0m  SELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 18:26:41.928488' AND DateTime(published_to) > '2016-03-07 18:26:41.928508' AND published == 't')
+  Rendered sliders/index.html.erb within layouts/application (19.4ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007f4f6468d110>:0x007f4f75b8b408>):
+     8:       </div>
+     9: 
+    10:       <div class="field">
+    11:         <%=f.label :password%></br>
+    12:         <%=f.password_field :password%>
+    13:       </div>
+    14:       <div class="field">
+  app/views/sliders/index.html.erb:11:in `block in _app_views_sliders_index_html_erb___1841902714144114498_69989627089080'
+  app/views/sliders/index.html.erb:2:in `_app_views_sliders_index_html_erb___1841902714144114498_69989627089080'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.8ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.6ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.7ms)
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 19:27:24 +0100
+Processing by SlidersController#index as HTML
+  [1m[36mSlider Load (0.3ms)[0m  [1mSELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 18:27:24.742582' AND DateTime(published_to) > '2016-03-07 18:27:24.742606' AND published == 't')[0m
+  Rendered sliders/index.html.erb within layouts/application (19.1ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007f4f6468d110>:0x007f4f64aa0fb8>):
+     8:       </div>
+     9: 
+    10:       <div class="field">
+    11:         <%=f.label :password%></br>
+    12:         <%=f.password_field :password%>
+    13:       </div>
+    14:       <div class="field">
+  app/views/sliders/index.html.erb:11:in `block in _app_views_sliders_index_html_erb___1841902714144114498_69989484043820'
+  app/views/sliders/index.html.erb:2:in `_app_views_sliders_index_html_erb___1841902714144114498_69989484043820'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.8ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.2ms)
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 19:27:59 +0100
+Processing by SlidersController#index as HTML
+  [1m[35mSlider Load (0.2ms)[0m  SELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 18:27:59.320679' AND DateTime(published_to) > '2016-03-07 18:27:59.320696' AND published == 't')
+  Rendered sliders/index.html.erb within layouts/application (14.9ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007f4f6468d110>:0x000000038857b8>):
+     8:       </div>
+     9: 
+    10:       <div class="field">
+    11:         <%= f.label :password%></br>
+    12:         <%= f.password_field :password%>
+    13:       </div>
+    14:       <div class="field">
+  app/views/sliders/index.html.erb:11:in `block in _app_views_sliders_index_html_erb___1841902714144114498_29486880'
+  app/views/sliders/index.html.erb:2:in `_app_views_sliders_index_html_erb___1841902714144114498_29486880'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.8ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.0ms)
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 19:28:13 +0100
+Processing by SlidersController#index as HTML
+  [1m[36mSlider Load (0.4ms)[0m  [1mSELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 18:28:13.975585' AND DateTime(published_to) > '2016-03-07 18:28:13.975612' AND published == 't')[0m
+  Rendered sliders/index.html.erb within layouts/application (9.4ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (wrong number of arguments (1 for 2..4)):
+     8:       </div>
+     9: 
+    10:       <div class="field">
+    11:         <%= label :password%></br>
+    12:         <%= f.password_field :password%>
+    13:       </div>
+    14:       <div class="field">
+  app/views/sliders/index.html.erb:11:in `block in _app_views_sliders_index_html_erb___1841902714144114498_69989378245580'
+  app/views/sliders/index.html.erb:2:in `_app_views_sliders_index_html_erb___1841902714144114498_69989378245580'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.9ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.9ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.0ms)
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 19:28:23 +0100
+Processing by SlidersController#index as HTML
+  Rendered sliders/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/vergne/Documents/rubyRor/MySlide/app/views/sliders/index.html.erb:11: syntax error, unexpected '.'
+...reeze;@output_buffer.append=( .label :password);@output_buff...
+...                               ^):
+  app/views/sliders/index.html.erb:11: syntax error, unexpected '.'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.1ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (37.1ms)
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 19:28:26 +0100
+Processing by SlidersController#index as HTML
+  Rendered sliders/index.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/vergne/Documents/rubyRor/MySlide/app/views/sliders/index.html.erb:11: syntax error, unexpected '.'
+...reeze;@output_buffer.append=( .flabel :password);@output_buf...
+...                               ^):
+  app/views/sliders/index.html.erb:11: syntax error, unexpected '.'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.3ms)
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 19:28:30 +0100
+Processing by SlidersController#index as HTML
+  [1m[35mSlider Load (0.4ms)[0m  SELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 18:28:30.528290' AND DateTime(published_to) > '2016-03-07 18:28:30.528315' AND published == 't')
+  Rendered sliders/index.html.erb within layouts/application (23.7ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007f4f6468d110>:0x007f4f6479cc90>):
+     8:       </div>
+     9: 
+    10:       <div class="field">
+    11:         <%= f.label :password%></br>
+    12:         <%= f.password_field :password%>
+    13:       </div>
+    14:       <div class="field">
+  app/views/sliders/index.html.erb:11:in `block in _app_views_sliders_index_html_erb___1841902714144114498_69989481192560'
+  app/views/sliders/index.html.erb:2:in `_app_views_sliders_index_html_erb___1841902714144114498_69989481192560'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.1ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.1ms)
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 19:29:16 +0100
+Processing by SlidersController#index as HTML
+  [1m[36mSlider Load (0.6ms)[0m  [1mSELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 18:29:16.736752' AND DateTime(published_to) > '2016-03-07 18:29:16.736775' AND published == 't')[0m
+  Rendered sliders/index.html.erb within layouts/application (30.9ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007f4f6468d110>:0x007f4f64365c80>):
+     8:       </div>
+     9: 
+    10:       <div class="field">
+    11:         <%= f.label :password %></br>
+    12:         <%= f.password_field :password %>
+    13:       </div>
+    14:       <div class="field">
+  app/views/sliders/index.html.erb:11:in `block in _app_views_sliders_index_html_erb___1841902714144114498_69989480211640'
+  app/views/sliders/index.html.erb:2:in `_app_views_sliders_index_html_erb___1841902714144114498_69989480211640'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.1ms)
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 19:29:44 +0100
+Processing by SlidersController#index as HTML
+  [1m[35mSlider Load (0.6ms)[0m  SELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 18:29:44.372615' AND DateTime(published_to) > '2016-03-07 18:29:44.372640' AND published == 't')
+  Rendered sliders/index.html.erb within layouts/application (28.9ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007f4f6468d110>:0x007f4f75ad83a8>):
+     8:       </div>
+     9: 
+    10:       <!-- <div class="field">
+    11:         <%= f.label :password %></br>
+    12:         <%= f.password_field :password %>
+    13:       </div> -->
+    14:       <div class="field">
+  app/views/sliders/index.html.erb:11:in `block in _app_views_sliders_index_html_erb___1841902714144114498_69989626705780'
+  app/views/sliders/index.html.erb:2:in `_app_views_sliders_index_html_erb___1841902714144114498_69989626705780'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.5ms)
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 19:29:51 +0100
+Processing by SlidersController#index as HTML
+  [1m[36mSlider Load (0.3ms)[0m  [1mSELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 18:29:51.951975' AND DateTime(published_to) > '2016-03-07 18:29:51.952006' AND published == 't')[0m
+  Rendered sliders/index.html.erb within layouts/application (16.4ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007f4f6468d110>:0x007f4f6417a6c8>):
+     9: 
+    10: 
+    11:       <div class="field">
+    12:         <%= f.password_confirmation :password_confirmation %></br>
+    13:         <%= f.password_confirmation_field :password_confirmation_field %>
+    14:       </div>
+    15:     <% end %>
+  app/views/sliders/index.html.erb:12:in `block in _app_views_sliders_index_html_erb___1841902714144114498_69989479205400'
+  app/views/sliders/index.html.erb:2:in `_app_views_sliders_index_html_erb___1841902714144114498_69989479205400'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.8ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.2ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.8ms)
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 19:30:01 +0100
+Processing by SlidersController#index as HTML
+  [1m[35mSlider Load (0.4ms)[0m  SELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 18:30:01.451657' AND DateTime(published_to) > '2016-03-07 18:30:01.451683' AND published == 't')
+  Rendered sliders/index.html.erb within layouts/application (27.3ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007f4f6468d110>:0x007f4f6806b850>):
+     8:       </div>
+     9: 
+    10:       <div class="field">
+    11:         <%= f.label :password %></br>
+    12:         <%= f.password_field :password %>
+    13:       </div>
+    14:       <div class="field">
+  app/views/sliders/index.html.erb:11:in `block in _app_views_sliders_index_html_erb___1841902714144114498_69989512205020'
+  app/views/sliders/index.html.erb:2:in `_app_views_sliders_index_html_erb___1841902714144114498_69989512205020'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.9ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.9ms)
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 19:34:45 +0100
+Processing by SlidersController#index as HTML
+  [1m[36mSlider Load (0.5ms)[0m  [1mSELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 18:34:45.281220' AND DateTime(published_to) > '2016-03-07 18:34:45.281238' AND published == 't')[0m
+  Rendered sliders/index.html.erb within layouts/application (25.5ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007f4f75789148>:0x007f4f757630d8>):
+     8:       </div>
+     9: 
+    10:       <div class="field">
+    11:         <%= f.label :password %></br>
+    12:         <%= f.password_field :password %>
+    13:       </div>
+    14:       <div class="field">
+  app/views/sliders/index.html.erb:11:in `block in _app_views_sliders_index_html_erb___1841902714144114498_69989512205020'
+  app/views/sliders/index.html.erb:2:in `_app_views_sliders_index_html_erb___1841902714144114498_69989512205020'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.1ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.2ms)
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 19:34:46 +0100
+Processing by SlidersController#index as HTML
+  [1m[35mSlider Load (0.3ms)[0m  SELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 18:34:46.287558' AND DateTime(published_to) > '2016-03-07 18:34:46.287575' AND published == 't')
+  Rendered sliders/index.html.erb within layouts/application (14.5ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007f4f75789148>:0x007f4f580b0f28>):
+     8:       </div>
+     9: 
+    10:       <div class="field">
+    11:         <%= f.label :password %></br>
+    12:         <%= f.password_field :password %>
+    13:       </div>
+    14:       <div class="field">
+  app/views/sliders/index.html.erb:11:in `block in _app_views_sliders_index_html_erb___1841902714144114498_69989512205020'
+  app/views/sliders/index.html.erb:2:in `_app_views_sliders_index_html_erb___1841902714144114498_69989512205020'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.9ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.8ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.9ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_remember_me_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_remember_me_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 19:35:33 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SlidersController#index as HTML
+  [1m[35mSlider Load (0.2ms)[0m  SELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 18:35:34.035399' AND DateTime(published_to) > '2016-03-07 18:35:34.035419' AND published == 't')
+  Rendered sliders/index.html.erb within layouts/application (25.0ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00000005731d88>:0x0000000572cc48>):
+     8:       </div>
+     9: 
+    10:       <div class="field">
+    11:         <%= f.label :password %></br>
+    12:         <%= f.password_field :password %>
+    13:       </div>
+    14:       <div class="field">
+  app/views/sliders/index.html.erb:11:in `block in _app_views_sliders_index_html_erb__547851293360855024_45547020'
+  app/views/sliders/index.html.erb:2:in `_app_views_sliders_index_html_erb__547851293360855024_45547020'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.7ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (37.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2016-03-07 19:35:50 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (17.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (83.8ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.3ms)
+
+
+Started GET "/sliders" for 127.0.0.1 at 2016-03-07 19:35:55 +0100
+Processing by SlidersController#index as HTML
+  [1m[36mSlider Load (0.4ms)[0m  [1mSELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 18:35:55.599621' AND DateTime(published_to) > '2016-03-07 18:35:55.599645' AND published == 't')[0m
+  Rendered sliders/index.html.erb within layouts/application (20.9ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00000005731d88>:0x00000004fb08c0>):
+     8:       </div>
+     9: 
+    10:       <div class="field">
+    11:         <%= f.label :password %></br>
+    12:         <%= f.password_field :password %>
+    13:       </div>
+    14:       <div class="field">
+  app/views/sliders/index.html.erb:11:in `block in _app_views_sliders_index_html_erb__547851293360855024_45547020'
+  app/views/sliders/index.html.erb:2:in `_app_views_sliders_index_html_erb__547851293360855024_45547020'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.6ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (34.3ms)
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 19:38:16 +0100
+Processing by SlidersController#index as HTML
+  [1m[35mSlider Load (0.3ms)[0m  SELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 18:38:16.912473' AND DateTime(published_to) > '2016-03-07 18:38:16.912489' AND published == 't')
+  Rendered sliders/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 207ms (Views: 205.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 19:38:17 +0100
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 19:38:17 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 19:38:17 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 19:38:17 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 19:38:17 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 19:38:17 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 19:38:17 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 19:38:17 +0100
+
+
+Started GET "/admin" for ::1 at 2016-03-07 19:38:21 +0100
+Processing by Admin::SlidersController#index as HTML
+  [1m[36mSlider Load (0.3ms)[0m  [1mSELECT "sliders".* FROM "sliders"[0m
+  Rendered admin/sliders/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 27ms (Views: 24.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/sliders/7/edit" for ::1 at 2016-03-07 19:38:24 +0100
+Processing by Admin::SlidersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mSlider Load (0.4ms)[0m  SELECT  "sliders".* FROM "sliders" WHERE "sliders"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered admin/sliders/_form.html.erb (55.7ms)
+  Rendered admin/sliders/edit.html.erb within layouts/application (57.3ms)
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `password_confirmation' for #<ActionView::Helpers::FormBuilder:0x00000003ed8048>):
+    16:           <%= f.password_field :password %>
+    17:         </div>
+    18:         <div class="field">
+    19:           <%= f.password_confirmation :password_confirmation %></br>
+    20:           <%= f.password_confirmation_field :password_confirmation_field %>
+    21:         </div>
+    22:   <div class="field">
+  app/views/admin/sliders/_form.html.erb:19:in `block in _app_views_admin_sliders__form_html_erb___2041863615841711134_35174340'
+  app/views/admin/sliders/_form.html.erb:1:in `_app_views_admin_sliders__form_html_erb___2041863615841711134_35174340'
+  app/views/admin/sliders/edit.html.erb:3:in `_app_views_admin_sliders_edit_html_erb___2043315098771922116_35593100'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.2ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.9ms)
+
+
+Started GET "/admin/sliders/7/edit" for ::1 at 2016-03-07 19:38:24 +0100
+Processing by Admin::SlidersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSlider Load (0.1ms)[0m  [1mSELECT  "sliders".* FROM "sliders" WHERE "sliders"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered admin/sliders/_form.html.erb (12.8ms)
+  Rendered admin/sliders/edit.html.erb within layouts/application (14.3ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `password_confirmation' for #<ActionView::Helpers::FormBuilder:0x007fa5a648f488>):
+    16:           <%= f.password_field :password %>
+    17:         </div>
+    18:         <div class="field">
+    19:           <%= f.password_confirmation :password_confirmation %></br>
+    20:           <%= f.password_confirmation_field :password_confirmation_field %>
+    21:         </div>
+    22:   <div class="field">
+  app/views/admin/sliders/_form.html.erb:19:in `block in _app_views_admin_sliders__form_html_erb___2041863615841711134_70174714409360'
+  app/views/admin/sliders/_form.html.erb:1:in `_app_views_admin_sliders__form_html_erb___2041863615841711134_70174714409360'
+  app/views/admin/sliders/edit.html.erb:3:in `_app_views_admin_sliders_edit_html_erb___2043315098771922116_70174631868440'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.2ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.2ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.9ms)
+
+
+Started GET "/admin/sliders/new" for ::1 at 2016-03-07 19:38:28 +0100
+Processing by Admin::SlidersController#new as HTML
+  Rendered admin/sliders/_form.html.erb (14.2ms)
+  Rendered admin/sliders/new.html.erb within layouts/application (15.5ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `password_confirmation' for #<ActionView::Helpers::FormBuilder:0x007fa5a5bac938>):
+    16:           <%= f.password_field :password %>
+    17:         </div>
+    18:         <div class="field">
+    19:           <%= f.password_confirmation :password_confirmation %></br>
+    20:           <%= f.password_confirmation_field :password_confirmation_field %>
+    21:         </div>
+    22:   <div class="field">
+  app/views/admin/sliders/_form.html.erb:19:in `block in _app_views_admin_sliders__form_html_erb___2041863615841711134_35174340'
+  app/views/admin/sliders/_form.html.erb:1:in `_app_views_admin_sliders__form_html_erb___2041863615841711134_35174340'
+  app/views/admin/sliders/new.html.erb:3:in `_app_views_admin_sliders_new_html_erb__1420460082864139747_70174713504220'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (23.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (41.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.2ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.9ms)
+
+
+Started GET "/admin/sliders/new" for ::1 at 2016-03-07 19:38:28 +0100
+Processing by Admin::SlidersController#new as HTML
+  Rendered admin/sliders/_form.html.erb (15.2ms)
+  Rendered admin/sliders/new.html.erb within layouts/application (16.4ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `password_confirmation' for #<ActionView::Helpers::FormBuilder:0x007fa5a6191f38>):
+    16:           <%= f.password_field :password %>
+    17:         </div>
+    18:         <div class="field">
+    19:           <%= f.password_confirmation :password_confirmation %></br>
+    20:           <%= f.password_confirmation_field :password_confirmation_field %>
+    21:         </div>
+    22:   <div class="field">
+  app/views/admin/sliders/_form.html.erb:19:in `block in _app_views_admin_sliders__form_html_erb___2041863615841711134_70174714409360'
+  app/views/admin/sliders/_form.html.erb:1:in `_app_views_admin_sliders__form_html_erb___2041863615841711134_70174714409360'
+  app/views/admin/sliders/new.html.erb:3:in `_app_views_admin_sliders_new_html_erb__1420460082864139747_70174716520540'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.8ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.1ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.8ms)
+
+
+Started GET "/admin/sliders/new" for ::1 at 2016-03-07 19:39:49 +0100
+Processing by Admin::SlidersController#new as HTML
+  Rendered admin/sliders/_form.html.erb (13.1ms)
+  Rendered admin/sliders/new.html.erb within layouts/application (13.7ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.9ms)
+
+ActionView::Template::Error (undefined method `password_confirmation' for #<ActionView::Helpers::FormBuilder:0x007fa5a614c1e0>):
+    16:           <%= f.password_field :password %>
+    17:         </div>
+    18:         <div class="field">
+    19:           <%= f.password_confirmation :password_confirmation %></br>
+    20:           <%= f.password_confirmation_field :password_confirmation_field %>
+    21:         </div>
+    22:   <div class="field">
+  app/views/admin/sliders/_form.html.erb:19:in `block in _app_views_admin_sliders__form_html_erb___2041863615841711134_70174714409360'
+  app/views/admin/sliders/_form.html.erb:1:in `_app_views_admin_sliders__form_html_erb___2041863615841711134_70174714409360'
+  app/views/admin/sliders/new.html.erb:3:in `_app_views_admin_sliders_new_html_erb__1420460082864139747_70174716520540'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.9ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.3ms)
+
+
+Started GET "/admin/sliders/new" for ::1 at 2016-03-07 19:39:50 +0100
+Processing by Admin::SlidersController#new as HTML
+  Rendered admin/sliders/_form.html.erb (20.4ms)
+  Rendered admin/sliders/new.html.erb within layouts/application (23.2ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `password_confirmation' for #<ActionView::Helpers::FormBuilder:0x007fa5a5e751b0>):
+    16:           <%= f.password_field :password %>
+    17:         </div>
+    18:         <div class="field">
+    19:           <%= f.password_confirmation :password_confirmation %></br>
+    20:           <%= f.password_confirmation_field :password_confirmation_field %>
+    21:         </div>
+    22:   <div class="field">
+  app/views/admin/sliders/_form.html.erb:19:in `block in _app_views_admin_sliders__form_html_erb___2041863615841711134_70174714409360'
+  app/views/admin/sliders/_form.html.erb:1:in `_app_views_admin_sliders__form_html_erb___2041863615841711134_70174714409360'
+  app/views/admin/sliders/new.html.erb:3:in `_app_views_admin_sliders_new_html_erb__1420460082864139747_70174716520540'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.2ms)
+
+
+Started GET "/admin/sliders/new" for ::1 at 2016-03-07 19:40:49 +0100
+Processing by Admin::SlidersController#new as HTML
+  Rendered admin/sliders/_form.html.erb (17.1ms)
+  Rendered admin/sliders/new.html.erb within layouts/application (18.1ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `password_confirmation' for #<ActionView::Helpers::FormBuilder:0x007fa5a4f08010>):
+    16:   <%= f.password_field :password %>
+    17:   </div>
+    18:   <div class="field">
+    19:   <%= f.password_confirmation :password_confirmation %></br>
+    20:   <%= f.password_confirmation_field :password_confirmation_field %>
+    21:   </div>
+    22:   <div class="field">
+  app/views/admin/sliders/_form.html.erb:19:in `block in _app_views_admin_sliders__form_html_erb___2041863615841711134_70174706968600'
+  app/views/admin/sliders/_form.html.erb:1:in `_app_views_admin_sliders__form_html_erb___2041863615841711134_70174706968600'
+  app/views/admin/sliders/new.html.erb:3:in `_app_views_admin_sliders_new_html_erb__1420460082864139747_70174716520540'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.1ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.5ms)
+
+
+Started GET "/admin/sliders/new" for ::1 at 2016-03-07 20:11:41 +0100
+Processing by Admin::SlidersController#new as HTML
+  Rendered admin/sliders/_form.html.erb (18.8ms)
+  Rendered admin/sliders/new.html.erb within layouts/application (19.7ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `password_confirmation' for #<ActionView::Helpers::FormBuilder:0x007fa5a5a6d798>):
+    16:   <%= f.password_field :password %>
+    17:   </div>
+    18:   <div class="field">
+    19:   <%= f.password_confirmation :password_confirmation %></br>
+    20:   <%= f.password_confirmation_field :password_confirmation_field %>
+    21:   </div>
+    22:   <div class="field">
+  app/views/admin/sliders/_form.html.erb:19:in `block in _app_views_admin_sliders__form_html_erb___2041863615841711134_70174706968600'
+  app/views/admin/sliders/_form.html.erb:1:in `_app_views_admin_sliders__form_html_erb___2041863615841711134_70174706968600'
+  app/views/admin/sliders/new.html.erb:3:in `_app_views_admin_sliders_new_html_erb__1420460082864139747_70174716520540'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.7ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.4ms)
+
+
+Started GET "/admin/sliders/new" for ::1 at 2016-03-07 20:12:08 +0100
+Processing by Admin::SlidersController#new as HTML
+  Rendered admin/sliders/_form.html.erb (25.6ms)
+  Rendered admin/sliders/new.html.erb within layouts/application (29.1ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `password_confirmation' for #<ActionView::Helpers::FormBuilder:0x007fa5a6416f60>):
+    16:   <%= f.password_field :password %>
+    17:   </div>
+    18:   <!-- <div class="field">
+    19:   <%= f.password_confirmation :password_confirmation %></br>
+    20:   <%= f.password_confirmation_field :password_confirmation_field %>
+    21:   </div> -->
+    22:   <div class="field">
+  app/views/admin/sliders/_form.html.erb:19:in `block in _app_views_admin_sliders__form_html_erb___2041863615841711134_70174717980300'
+  app/views/admin/sliders/_form.html.erb:1:in `_app_views_admin_sliders__form_html_erb___2041863615841711134_70174717980300'
+  app/views/admin/sliders/new.html.erb:3:in `_app_views_admin_sliders_new_html_erb__1420460082864139747_70174716520540'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.1ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.0ms)
+
+
+Started GET "/admin/sliders/new" for ::1 at 2016-03-07 20:12:14 +0100
+Processing by Admin::SlidersController#new as HTML
+  Rendered admin/sliders/_form.html.erb (12.4ms)
+  Rendered admin/sliders/new.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 20:12:14 +0100
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 20:12:14 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 20:12:14 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 20:12:14 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 20:12:14 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 20:12:14 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 20:12:14 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 20:12:14 +0100
+
+
+Started POST "/admin/sliders" for ::1 at 2016-03-07 20:12:32 +0100
+Processing by Admin::SlidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XCFdhnYEX7c+uQkQac3U/8sacmunDtT+axiC4FkJp0GqOKq8nNLIypiSQVgdBmPid4zvVahqPaLXrymYOmdSVQ==", "slider"=>{"password"=>"[FILTERED]", "name"=>"imae", "descriptiong"=>"", "published"=>"0", "published_from(1i)"=>"2016", "published_from(2i)"=>"3", "published_from(3i)"=>"7", "published_to(1i)"=>"2016", "published_to(2i)"=>"3", "published_to(3i)"=>"7", "descriptiond"=>""}, "commit"=>"Create Slider"}
+Unpermitted parameter: password
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered admin/sliders/_form.html.erb (8.4ms)
+  Rendered admin/sliders/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 29ms (Views: 23.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/admin/sliders" for ::1 at 2016-03-07 20:12:46 +0100
+Processing by Admin::SlidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k1E4UnVvHoaHqFX1wmbDSmhaZv+LUZu+x8PeUMm6fg1lSM9on7mJ+yGDHb22rXRX1Mz7wYQ1cuJ7dHUoqtSLGQ==", "slider"=>{"password"=>"[FILTERED]", "name"=>"imae", "descriptiong"=>"dsfdf", "published"=>"0", "published_from(1i)"=>"2016", "published_from(2i)"=>"3", "published_from(3i)"=>"7", "published_to(1i)"=>"2016", "published_to(2i)"=>"3", "published_to(3i)"=>"7", "descriptiond"=>"sdfsf", "picture"=>#<ActionDispatch::Http::UploadedFile:0x007fa5a56fe490 @tempfile=#<Tempfile:/tmp/RackMultipart20160307-3622-oz49qo.jpg>, @original_filename="image web.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"slider[picture]\"; filename=\"image web.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Slider"}
+Unpermitted parameter: password
+Command :: file -b --mime '/tmp/2eb2064b8d7a8e91c90bdd9dc076c43f20160307-3622-1fh2cjr.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/febcd901c4872db4f26199488bcac1c520160307-3622-4flbdl.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/febcd901c4872db4f26199488bcac1c520160307-3622-4flbdl.jpg[0]'
+Command :: convert '/tmp/febcd901c4872db4f26199488bcac1c520160307-3622-4flbdl.jpg[0]' -auto-orient -resize "1920x1800>" '/tmp/d9d04b7ed51770b25c4ce08ff8fd35ce20160307-3622-1ekk0n3'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/febcd901c4872db4f26199488bcac1c520160307-3622-4flbdl.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/febcd901c4872db4f26199488bcac1c520160307-3622-4flbdl.jpg[0]'
+Command :: convert '/tmp/febcd901c4872db4f26199488bcac1c520160307-3622-4flbdl.jpg[0]' -auto-orient -resize "200x200>" '/tmp/d9d04b7ed51770b25c4ce08ff8fd35ce20160307-3622-6zkri6'
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: file -b --mime '/tmp/2eb2064b8d7a8e91c90bdd9dc076c43f20160307-3622-d0s8ms.jpg'
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "sliders" ("name", "descriptiong", "descriptiond", "picture_file_name", "picture_content_type", "picture_file_size", "picture_updated_at", "published", "published_from", "published_to", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "imae"], ["descriptiong", "dsfdf"], ["descriptiond", "sdfsf"], ["picture_file_name", "image_web.jpg"], ["picture_content_type", "image/jpeg"], ["picture_file_size", 22773], ["picture_updated_at", "2016-03-07 19:12:46.599347"], ["published", "f"], ["published_from", "2016-03-07 00:00:00.000000"], ["published_to", "2016-03-07 00:00:00.000000"], ["created_at", "2016-03-07 19:12:47.176846"], ["updated_at", "2016-03-07 19:12:47.176846"]]
+  [1m[35m (88.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/admin/sliders/8
+Completed 302 Found in 747ms (ActiveRecord: 88.4ms)
+
+
+Started GET "/admin/sliders/8" for ::1 at 2016-03-07 20:12:47 +0100
+Processing by Admin::SlidersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSlider Load (0.3ms)[0m  [1mSELECT  "sliders".* FROM "sliders" WHERE "sliders"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered admin/sliders/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 21ms (Views: 18.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/sliders" for ::1 at 2016-03-07 20:12:50 +0100
+Processing by Admin::SlidersController#index as HTML
+  [1m[35mSlider Load (0.2ms)[0m  SELECT "sliders".* FROM "sliders"
+  Rendered admin/sliders/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/admin/sliders/8" for ::1 at 2016-03-07 20:12:56 +0100
+Processing by Admin::SlidersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Z8MKfAZI4PVc28qL+UUUILeZgFctVqpPXdGTnyS0d3SR2v1G7J53iPrwgsONjqM9Cw8daSIyQxPhZjjnR9qCYA==", "id"=>"8"}
+  [1m[36mSlider Load (0.1ms)[0m  [1mSELECT  "sliders".* FROM "sliders" WHERE "sliders"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "sliders" WHERE "sliders"."id" = ?[0m  [["id", 8]]
+  [1m[35m (260.7ms)[0m  commit transaction
+[paperclip] deleting /home/vergne/Documents/rubyRor/MySlide/public/system/sliders/pictures/000/000/008/original/image_web.jpg
+[paperclip] deleting /home/vergne/Documents/rubyRor/MySlide/public/system/sliders/pictures/000/000/008/large/image_web.jpg
+[paperclip] deleting /home/vergne/Documents/rubyRor/MySlide/public/system/sliders/pictures/000/000/008/thumb/image_web.jpg
+Redirected to http://localhost:3000/sliders
+Completed 302 Found in 289ms (ActiveRecord: 261.1ms)
+
+
+Started GET "/sliders" for ::1 at 2016-03-07 20:12:56 +0100
+Processing by SlidersController#index as HTML
+  [1m[36mSlider Load (0.2ms)[0m  [1mSELECT "sliders".* FROM "sliders" WHERE (DateTime(published_from) < '2016-03-07 19:12:56.424153' AND DateTime(published_to) > '2016-03-07 19:12:56.424168' AND published == 't')[0m
+  Rendered sliders/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for ::1 at 2016-03-07 20:13:03 +0100
+Processing by Admin::SlidersController#index as HTML
+  [1m[35mSlider Load (4.2ms)[0m  SELECT "sliders".* FROM "sliders"
+  Rendered admin/sliders/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 51ms (Views: 46.1ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/admin" for ::1 at 2016-03-07 20:16:47 +0100
+Processing by Admin::SlidersController#index as HTML
+  [1m[36mSlider Load (0.5ms)[0m  [1mSELECT "sliders".* FROM "sliders"[0m
+  Rendered admin/sliders/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 39ms (Views: 32.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/scaffolds.self-f3b735b4026900a0efc81c8cdc160e8f671f219568658a1375038387aefaedac.css?body=1" for ::1 at 2016-03-07 20:16:47 +0100
+
+
+Started GET "/assets/sliders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-03-07 20:16:47 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-03-07 20:16:47 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-03-07 20:16:47 +0100
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-03-07 20:16:47 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-03-07 20:16:47 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-07 20:16:47 +0100
+
+
+Started GET "/assets/sliders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-07 20:16:47 +0100
+
+
+Started GET "/admin/sliders/new" for ::1 at 2016-03-07 20:17:30 +0100
+Processing by Admin::SlidersController#new as HTML
+  Rendered admin/sliders/_form.html.erb (14.5ms)
+  Rendered admin/sliders/new.html.erb within layouts/application (15.3ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `password_confirmation' for #<ActionView::Helpers::FormBuilder:0x007fa5a5da8890>):
+    16:   <%= f.password_field :password %>
+    17:   </div>
+    18:   <div class="field">
+    19:   <%= f.password_confirmation :password_confirmation %></br>
+    20:   <%= f.password_confirmation_field :password_confirmation_field %>
+    21:   </div>
+    22:   <div class="field">
+  app/views/admin/sliders/_form.html.erb:19:in `block in _app_views_admin_sliders__form_html_erb___2041863615841711134_70174714158620'
+  app/views/admin/sliders/_form.html.erb:1:in `_app_views_admin_sliders__form_html_erb___2041863615841711134_70174714158620'
+  app/views/admin/sliders/new.html.erb:3:in `_app_views_admin_sliders_new_html_erb__1420460082864139747_70174713504220'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.6ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (33.8ms)
+
+
+Started GET "/admin/sliders/new" for ::1 at 2016-03-07 20:17:31 +0100
+Processing by Admin::SlidersController#new as HTML
+  Rendered admin/sliders/_form.html.erb (13.7ms)
+  Rendered admin/sliders/new.html.erb within layouts/application (14.3ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `password_confirmation' for #<ActionView::Helpers::FormBuilder:0x007fa5a64db838>):
+    16:   <%= f.password_field :password %>
+    17:   </div>
+    18:   <div class="field">
+    19:   <%= f.password_confirmation :password_confirmation %></br>
+    20:   <%= f.password_confirmation_field :password_confirmation_field %>
+    21:   </div>
+    22:   <div class="field">
+  app/views/admin/sliders/_form.html.erb:19:in `block in _app_views_admin_sliders__form_html_erb___2041863615841711134_70174713144540'
+  app/views/admin/sliders/_form.html.erb:1:in `_app_views_admin_sliders__form_html_erb___2041863615841711134_70174713144540'
+  app/views/admin/sliders/new.html.erb:3:in `_app_views_admin_sliders_new_html_erb__1420460082864139747_70174716520540'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.2ms)
+
+
+Started GET "/admin/sliders/new" for ::1 at 2016-03-07 20:21:55 +0100
+Processing by Admin::SlidersController#new as HTML
+  Rendered admin/sliders/_form.html.erb (21.0ms)
+  Rendered admin/sliders/new.html.erb within layouts/application (22.1ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `password_confirmation' for #<ActionView::Helpers::FormBuilder:0x007fa5a5f62dc0>):
+    16:   <%= f.password_field :password %>
+    17:   </div>
+    18:   <div class="field">
+    19:   <%= f.password_confirmation :password_confirmation %></br>
+    20:   <%= f.password_confirmation_field :password_confirmation_field %>
+    21:   </div>
+    22:   <div class="field">
+  app/views/admin/sliders/_form.html.erb:19:in `block in _app_views_admin_sliders__form_html_erb___2041863615841711134_70174713144540'
+  app/views/admin/sliders/_form.html.erb:1:in `_app_views_admin_sliders__form_html_erb___2041863615841711134_70174713144540'
+  app/views/admin/sliders/new.html.erb:3:in `_app_views_admin_sliders_new_html_erb__1420460082864139747_70174716520540'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.6ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (33.1ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.2ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (33.1ms)
+
+
+Started GET "/admin/sliders/" for ::1 at 2016-03-07 20:22:00 +0100
+Processing by Admin::SlidersController#index as HTML
+  [1m[35mSlider Load (0.2ms)[0m  SELECT "sliders".* FROM "sliders"
+  Rendered admin/sliders/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/sliders/new" for ::1 at 2016-03-07 20:22:04 +0100
+Processing by Admin::SlidersController#new as HTML
+  Rendered admin/sliders/_form.html.erb (12.9ms)
+  Rendered admin/sliders/new.html.erb within layouts/application (13.7ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `password_confirmation' for #<ActionView::Helpers::FormBuilder:0x007fa5a5c21440>):
+    16:   <%= f.password_field :password %>
+    17:   </div>
+    18:   <div class="field">
+    19:   <%= f.password_confirmation :password_confirmation %></br>
+    20:   <%= f.password_confirmation_field :password_confirmation_field %>
+    21:   </div>
+    22:   <div class="field">
+  app/views/admin/sliders/_form.html.erb:19:in `block in _app_views_admin_sliders__form_html_erb___2041863615841711134_70174714158620'
+  app/views/admin/sliders/_form.html.erb:1:in `_app_views_admin_sliders__form_html_erb___2041863615841711134_70174714158620'
+  app/views/admin/sliders/new.html.erb:3:in `_app_views_admin_sliders_new_html_erb__1420460082864139747_70174713504220'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.6ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (33.1ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.2ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (34.2ms)
+
+
+Started GET "/admin/sliders/new" for ::1 at 2016-03-07 20:22:04 +0100
+Processing by Admin::SlidersController#new as HTML
+  Rendered admin/sliders/_form.html.erb (13.3ms)
+  Rendered admin/sliders/new.html.erb within layouts/application (14.0ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `password_confirmation' for #<ActionView::Helpers::FormBuilder:0x007fa5a66dc740>):
+    16:   <%= f.password_field :password %>
+    17:   </div>
+    18:   <div class="field">
+    19:   <%= f.password_confirmation :password_confirmation %></br>
+    20:   <%= f.password_confirmation_field :password_confirmation_field %>
+    21:   </div>
+    22:   <div class="field">
+  app/views/admin/sliders/_form.html.erb:19:in `block in _app_views_admin_sliders__form_html_erb___2041863615841711134_70174713144540'
+  app/views/admin/sliders/_form.html.erb:1:in `_app_views_admin_sliders__form_html_erb___2041863615841711134_70174713144540'
+  app/views/admin/sliders/new.html.erb:3:in `_app_views_admin_sliders_new_html_erb__1420460082864139747_70174716520540'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.8ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.8ms)

@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem 'sorcery', '~> 0.9.0'
 
 gem "paperclip", :git => "http://github.com/thoughtbot/paperclip.git"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
