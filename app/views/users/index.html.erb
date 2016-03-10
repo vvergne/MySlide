@@ -9,25 +9,7 @@
       <th>Descriptiong</th>
       <th>Descriptiond</th>
       <th>Picture</th>
-      <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
-    <% @sliders.each do |slider| %>
-      <tr>
-        <td><%= slider.name %></td>
-        <td><%= slider.descriptiong %></td>
-        <td><%= slider.descriptiond %></td>
-        <td><%= image_tag slider.picture.url(:thumb) %></td>
-        <td><%= link_to 'Show', admin_slider_path(slider) %></td>
-        <td><%= link_to 'Edit', edit_admin_slider_path(slider) %></td>
-        <td><%= link_to 'Destroy', admin_slider_path(slider), method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Slider', new_admin_slider_path %>
