@@ -5,7 +5,7 @@
   # GET /sliders.json
   def index
     @sliders = Slider.all
-    @sliders = Slider.where("DateTime(published_from) < ? AND DateTime(published_to) > ? AND published == ?", DateTime.now, DateTime.now, true)
+    @sliders = Slider.where("DateTime(published_from) =< ? AND DateTime(published_to) >= ? AND published == ?", DateTime.now, DateTime.now, true)
   end
 end
 #   # GET /sliders/1

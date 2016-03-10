@@ -1,12 +1,22 @@
 Rails.application.routes.draw do
-  resources :sliders, only:["index"]
+  resources :user_sessions, :only => [:new, :create, :destroy]
+  # get 'user_sessions/new'
+  #
+  # get 'user_sessions/create'
+  #
+  # get 'user_sessions/destroy'
 
-  root "sliders#index"
+  get 'login' => 'user_sessions#new', :as => :login
+  post 'logout' => 'user_sessions#destroy', :as => :logout
+
+  root :to => 'sliders#index'
+  resources :users
+
 
   namespace :admin do
     resources :sliders
     root"sliders#index"
-end
+  end
 
 
 
